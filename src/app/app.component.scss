@@ -1,0 +1,84 @@
+.calculadora {
+  border: 3px rgb(94, 94, 97) ridge;
+  border-radius: 10px;
+  padding: 5px;
+  width: 350px;
+  height: 96%;
+margin-top: 5px;
+  text-align: center;
+  background-color: #a7a7a6;
+
+}
+@media screen and (max-width: 355px) {
+  .calculadora {width: 300px;
+  }
+  p{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+.formCalcule{
+ height: 100%;
+}
+/*pantalla de visualización: bordes, posición, color de fondo, estilo letra.*/
+.textoPantalla {
+  width: 97%;
+  height: 30%;
+  text-align: right;
+  padding: 0px;
+  border: 1px solid #bebebe ;
+  border-radius: 5px;
+  left: 23px;
+  padding: 0px 5px;
+  background-color: rgb(237, 231, 231);
+  font-family: "courier new";
+  overflow: hidden;
+  .operation{
+    font-size: 60px;
+    margin-bottom: 0px;
+  }
+  .operationMin{
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .result{
+    font-size: 40px;
+    margin-top: 0px;
+  }
+}
+
+/*botones normales: anchura y margen*/
+.calculadora [type="button"] {
+  width: 70px;
+  height: 70px;
+  padding: 0;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #c1c0e8;
+}
+/*botones especiales*/
+.calculadora input.largo {
+  color: rgb(209, 225, 249);
+  background-color: #7470f2;
+  width: 80px;
+  border-radius: 20px;
+  border: solid 1px cadetblue;
+  &.largo:hover{
+    background-color: rgb(209, 225, 249);
+    color: #7470f2;
+  }
+  &.clear{
+    background-color: rgb(243, 132, 101);
+    color: #f0e2da;
+    width: 100px;
+    &:hover{
+      background-color: #f0e2da;
+      color: rgb(243, 132, 101);
+    }
+  }
+}
+.operator{
+  background-color: #7470f2!important;
+}
